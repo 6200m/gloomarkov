@@ -1,11 +1,5 @@
-import markovify
+import markovify as v
 
-# Get raw text as string.
-with open("gloomarkov.txt") as f:
-    text = f.read()
-
-# Build the model.
-text_model = markovify.Text(text)
-
-# Print a randomly-generated sentence
-print(text_model.make_sentence())
+with open("gloomarkov.txt") as f: t = f.read()
+w = v.Text(t)
+print(w.make_sentence())
